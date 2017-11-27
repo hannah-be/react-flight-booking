@@ -8,9 +8,9 @@ class App extends Component {
     return (
       <div className="App">
         <h1>This is a heading</h1>
-        <Button title='Find Flights' primary={true} />
+        <Button title='Find Flights' primary />
         <Button title="Sign up" />
-        <Button title='Enter competition' magic={true} />
+        <Button title='Enter competition' magic />
         <ul>
           <li>First</li>
           <li>Second</li>
