@@ -5,6 +5,10 @@ body {
 }
 
 .btn {
+  font-size: inherit;
+  box-sizing: 1;
+  display: inline-block;
+
   background-color: white;
   color: fuchsia;
   border: 2px solid gray;

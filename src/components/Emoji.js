@@ -10,6 +10,8 @@ function Emoji({
         text = '😿'
     } else if (emotion === 'love'){
         text = '😻'
+    } else if (emotion === 'fear'){
+        text = '🙀'
    } else {
       text = '😺'
     }
@@ -18,6 +20,8 @@ function Emoji({
         text = '😩'
     } else if (emotion === 'love') {
         text = '😍'
+    } else if (emotion === 'fear') {
+        text = '😱'
     } else {
       text = '😊'
     }

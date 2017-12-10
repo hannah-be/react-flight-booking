@@ -9,18 +9,27 @@ class App extends Component {
     return (
       <div className="App">
         <h1>This is a heading</h1>
-        <Button title='Find Flights' primary />
-        <Button title="Sign up" />
-        <Button title='Enter competition' magic />
+        <Button primary >
+          Find Flights
+        </Button>
+        <Button>
+          Sign up
+        </Button>
+        <Button magic href="/competition">
+          <Emoji cat emotion='love' />
+          { ' ' }
+          Enter competition
+          </Button>
         <ul>
           <li><Emoji /></li>
           <li><Emoji emotion = 'sad' /></li>
           <li><Emoji emotion = 'love' /></li>
+          <li><Emoji emotion = 'fear' /></li>
           <li><Emoji cat /></li>
           <li><Emoji cat emotion = 'sad' /></li>
           <li><Emoji cat emotion = 'love' /></li>
+          <li><Emoji cat emotion = 'fear' /></li>
           </ul>
-        <p>No more content</p>
       </div>
     );
   }
