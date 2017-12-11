@@ -1,8 +1,40 @@
+body {
+  font-family: "Verdana";
+}
+
 h1 {
   color: cornflowerblue;
   text-align: center;
 }
 
-/* li {
-  transform: scaleY(-1);
-} */
+button {
+  margin: 10px;
+  padding: 5px;
+}
+
+a {
+  margin: 10px;
+  padding: 5px;
+  font-family: "Times New Roman"
+}
+
+Form {
+  margin: 5px;
+  padding: 5px;
+}
+
+input, label {
+  margin: 5px;
+  padding: 10px;
+  font-size: 1rem;
+  display: inline-block;
+
+  border-radius: 3px;
+  border-style: none;
+  border: 1px solid darkblue;
+}
+
+.primary {
+  color: darkorchid;
+}
+

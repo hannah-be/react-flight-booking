@@ -35,4 +35,3 @@ function Emoji({
 }
 
 export default Emoji
-// module.exports = Emoji

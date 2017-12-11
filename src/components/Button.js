@@ -17,28 +17,26 @@ function Button({
   if (magic) {
     className += ' btn--rainbow'
   }
-  const renderLink = !!href
-  const Component = renderLink ? 'a' : 'button'
+  // If href exists, render a link, otherwise render a button
+  const renderAnchor = !!href
+  // 'Component' is a custom component
+  const Component = renderAnchor ? 'a' : 'button'
 
-  return (
-    <Component href={ href } className={ className }>
-    { children }
-    </Component>
-  )
+    return (
+      <Component href={ href } className={ className }>
+        { children }
+      </Component>
+    )
 
-  // if (renderLink) {
-  //   return (
-  //     <a href={ href } className={ className }>
-  //       { children }
-  //       </a>
-  //   )
-  // } else {
-  //   return (
-  //     <button className={ className }>
-  //       { children }
-  //     </button>
-  //   )
-  // }
+  
+
+  // return (
+  //   <Component href={ href } className={ className }>
+  //   { children }
+  //   </Component>
+  // )
+
+
 }
 
 // Export default is the modern version of module.exports = Button

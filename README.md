@@ -65,8 +65,11 @@ function Button(props) {
   )
 }
 ```
-- Anywhere we have an object, JSX allows it to be replaced with curly braces and extract key-value pairs - this is called 'destructuring': e.g. (props) to ({ title, primary, magic }). This creates these as local variables so can shorten ``props.primary`` to ``primary`` etc. 
-- Then you can set default values. If nothing is set, values will be undefined by default.
+- Anywhere we have an object, JSX allows it to be replaced with curly braces and extract key-value pairs - this is called 'destructuring': e.g. (props) to ({ title, primary, magic }). This creates these as local variables so can shorten ``props.primary`` to ``primary`` etc making it simpler to use the variables.
+- Then you can set default values. If nothing is set, values will be undefined by default, so better to explicitly set as `false`.
 - Curly braces in JSX is analogous to <%%> in erb. 
+- You can set logic within the component, e.g. for a certain class to only apply if a given condition is met.
+- Pass along ``children`` to specify where you want them to be placed.
+- Use !! to specify 'present' or 'true' - i.e. x = undefined will not equal true or false. !x implicitly converts into a boolean value of true, so !!x will be false. Can be read as 'present' or 'does not equal false'. 
 
 #### React Developer Tools add-on for browser allows you to inspect React elements.
